@@ -14,19 +14,19 @@ export const carData: TCarData[] = [
   },
   {
     name: 'Model 3',
-    tagline: 'Starting at $69,420',
+    tagline: 'Starting at $45,420',
 
     image: require('./Model3.jpeg'),
   },
   {
     name: 'Model X',
-    tagline: 'Starting at $69,420',
+    tagline: 'Starting at $62,420',
 
     image: require('./ModelX.jpeg'),
   },
   {
     name: 'Model Y',
-    tagline: 'Starting at $69,420',
+    tagline: 'Starting at $42,420',
 
     image: require('./ModelY.jpeg'),
   },

@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { useWindowDimensions } from 'react-native';
 
 export const StyledBackgroundImage = styled.ImageBackground`
   flex: 1;
@@ -27,11 +28,6 @@ export const StyledSubText = styled.Text`
   font-size: 12px;
   margin-top: 10px;
   color: #5f5f5f;
-`;
-
-export const StyledCarContainer = styled.View`
-  flex: 1;
-  height: 100%;
 `;
 
 type TButtonProps = {

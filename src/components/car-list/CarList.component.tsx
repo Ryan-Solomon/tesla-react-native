@@ -1,10 +1,11 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, useWindowDimensions } from 'react-native';
 import styled from 'styled-components/native';
 import Car from '../car/Car.component';
 import { carData, TCarData } from './../../../assets/cars';
 
 const CarList = () => {
+  const height = useWindowDimensions().height;
   return (
     <StyledView>
       <FlatList
@@ -13,6 +14,10 @@ const CarList = () => {
           return item.name;
         }}
         renderItem={({ item }) => <Car car={item} />}
+        showsVerticalScrollIndicator={false}
+        snapToAlignment={'start'}
+        decelerationRate={'fast'}
+        snapToInterval={height}
       />
     </StyledView>
   );

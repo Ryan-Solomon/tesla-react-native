@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ImageSourcePropType } from 'react-native';
+import { ImageSourcePropType, useWindowDimensions, View } from 'react-native';
 import {
   StyledSubText,
   StyledText,
@@ -18,9 +18,10 @@ type TProps = {
 
 const Car: FC<TProps> = ({ car }) => {
   const { image, name, tagline } = car;
+  const windowHeight = useWindowDimensions().height;
 
   return (
-    <StyledCarContainer>
+    <View style={{ height: windowHeight }}>
       <StyledBackgroundImage
         resizeMode='cover'
         source={image as ImageSourcePropType}
@@ -38,7 +39,7 @@ const Car: FC<TProps> = ({ car }) => {
           </StyledButton>
         </StyledButtonContainer>
       </StyledBackgroundImage>
-    </StyledCarContainer>
+    </View>
   );
 };
 
