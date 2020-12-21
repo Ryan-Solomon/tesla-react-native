@@ -3,11 +3,22 @@ import styled from 'styled-components/native';
 export const StyledBackgroundImage = styled.ImageBackground`
   flex: 1;
   align-items: center;
+  justify-content: space-between;
+`;
+
+export const StyledTitlesContainer = styled.View`
+  align-items: center;
+  margin-top: 100px;
+`;
+
+export const StyledButtonContainer = styled.View`
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
 `;
 
 export const StyledText = styled.Text`
   font-size: 24px;
-  margin-top: 100px;
   color: #333;
 `;
 
@@ -30,6 +41,7 @@ export const StyledButton = styled.TouchableOpacity<Partial<TButtonProps>>`
   padding: 10px;
   background: ${({ backgroundColor }) => backgroundColor || '#333'};
   border-radius: 25px;
+  margin-bottom: 12px;
 `;
 
 type TButtonText = {

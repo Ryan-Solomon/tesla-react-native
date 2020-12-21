@@ -6,6 +6,8 @@ import {
   StyledBackgroundImage,
   StyledButton,
   StyledButtonText,
+  StyledButtonContainer,
+  StyledTitlesContainer,
 } from './Car.styles';
 
 const Car = () => {
@@ -15,15 +17,18 @@ const Car = () => {
         resizeMode='cover'
         source={require('../../../assets/ModelS.jpeg')}
       >
-        <StyledText>Model S</StyledText>
-        <StyledSubText>Starting at $46,040</StyledSubText>
-
-        <StyledButton>
-          <StyledButtonText>Custom Order</StyledButtonText>
-        </StyledButton>
-        <StyledButton backgroundColor='#fff'>
-          <StyledButtonText color='#333'>Existing Inventory</StyledButtonText>
-        </StyledButton>
+        <StyledTitlesContainer>
+          <StyledText>Model S</StyledText>
+          <StyledSubText>Starting at $46,040</StyledSubText>
+        </StyledTitlesContainer>
+        <StyledButtonContainer>
+          <StyledButton>
+            <StyledButtonText>Custom Order</StyledButtonText>
+          </StyledButton>
+          <StyledButton backgroundColor='#fff'>
+            <StyledButtonText color='#333'>Existing Inventory</StyledButtonText>
+          </StyledButton>
+        </StyledButtonContainer>
       </StyledBackgroundImage>
     </StyledCarContainer>
   );
