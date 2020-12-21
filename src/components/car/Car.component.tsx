@@ -4,6 +4,8 @@ import {
   StyledText,
   StyledCarContainer,
   StyledBackgroundImage,
+  StyledButton,
+  StyledButtonText,
 } from './Car.styles';
 
 const Car = () => {
@@ -15,6 +17,13 @@ const Car = () => {
       >
         <StyledText>Model S</StyledText>
         <StyledSubText>Starting at $46,040</StyledSubText>
+
+        <StyledButton>
+          <StyledButtonText>Custom Order</StyledButtonText>
+        </StyledButton>
+        <StyledButton backgroundColor='#fff'>
+          <StyledButtonText color='#333'>Existing Inventory</StyledButtonText>
+        </StyledButton>
       </StyledBackgroundImage>
     </StyledCarContainer>
   );

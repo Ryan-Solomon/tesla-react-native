@@ -20,3 +20,26 @@ export const StyledSubText = styled.Text`
 export const StyledCarContainer = styled.View`
   flex: 1;
 `;
+
+type TButtonProps = {
+  backgroundColor: string;
+};
+
+export const StyledButton = styled.TouchableOpacity<Partial<TButtonProps>>`
+  width: 90%;
+  padding: 10px;
+  background: ${({ backgroundColor }) => backgroundColor || '#333'};
+  border-radius: 25px;
+`;
+
+type TButtonText = {
+  color: string;
+  fontSize: string;
+};
+
+export const StyledButtonText = styled.Text<Partial<TButtonText>>`
+  color: ${({ color }) => color || '#fff'};
+  font-size: ${({ fontSize }) => fontSize || '14px'};
+  padding: 1px;
+  text-align: center;
+`;
