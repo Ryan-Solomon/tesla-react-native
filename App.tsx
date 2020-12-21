@@ -1,10 +1,10 @@
 import React from 'react';
-import Car from './src/components/car/Car.component';
+import CarItem from './src/components/car-list/CarList.component';
 
 export default function App() {
   return (
     <>
-      <Car />
+      <CarItem />
     </>
   );
 }

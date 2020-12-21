@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { ImageSourcePropType } from 'react-native';
 import {
   StyledSubText,
@@ -10,10 +10,14 @@ import {
   StyledButtonContainer,
   StyledTitlesContainer,
 } from './Car.styles';
-import { carData } from '../../../assets/cars';
+import { carData, TCarData } from '../../../assets/cars';
 
-const Car = () => {
-  const { image, name, tagline, taglineCTA } = carData[0];
+type TProps = {
+  car: TCarData;
+};
+
+const Car: FC<TProps> = ({ car }) => {
+  const { image, name, tagline } = car;
 
   return (
     <StyledCarContainer>

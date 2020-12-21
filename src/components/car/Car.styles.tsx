@@ -4,6 +4,7 @@ export const StyledBackgroundImage = styled.ImageBackground`
   flex: 1;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 `;
 
 export const StyledTitlesContainer = styled.View`
@@ -30,6 +31,7 @@ export const StyledSubText = styled.Text`
 
 export const StyledCarContainer = styled.View`
   flex: 1;
+  height: 100%;
 `;
 
 type TButtonProps = {
