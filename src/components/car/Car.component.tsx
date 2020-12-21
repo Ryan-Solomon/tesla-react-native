@@ -3,7 +3,6 @@ import { ImageSourcePropType, useWindowDimensions, View } from 'react-native';
 import {
   StyledSubText,
   StyledText,
-  StyledCarContainer,
   StyledBackgroundImage,
   StyledButton,
   StyledButtonText,

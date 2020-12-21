@@ -26,7 +26,5 @@ const CarList = () => {
 export default CarList;
 
 const StyledView = styled.View`
-  width: 100%;
-  height: 100%;
   flex: 1;
 `;

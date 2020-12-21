@@ -1,10 +1,17 @@
 import React from 'react';
-import CarItem from './src/components/car-list/CarList.component';
+import CarList from './src/components/car-list/CarList.component';
+import Header from './src/components/header/Header.component';
+import styled from 'styled-components/native';
 
 export default function App() {
   return (
-    <>
-      <CarItem />
-    </>
+    <StyledContainer>
+      <CarList />
+      <Header />
+    </StyledContainer>
   );
 }
+
+const StyledContainer = styled.View`
+  flex: 1;
+`;

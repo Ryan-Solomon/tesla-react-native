@@ -1,11 +1,10 @@
 import styled from 'styled-components/native';
-import { useWindowDimensions } from 'react-native';
 
 export const StyledBackgroundImage = styled.ImageBackground`
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  /* height: 100%; */
 `;
 
 export const StyledTitlesContainer = styled.View`
