@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageSourcePropType } from 'react-native';
 import {
   StyledSubText,
   StyledText,
@@ -9,17 +10,20 @@ import {
   StyledButtonContainer,
   StyledTitlesContainer,
 } from './Car.styles';
+import { carData } from '../../../assets/cars';
 
 const Car = () => {
+  const { image, name, tagline, taglineCTA } = carData[0];
+
   return (
     <StyledCarContainer>
       <StyledBackgroundImage
         resizeMode='cover'
-        source={require('../../../assets/ModelS.jpeg')}
+        source={image as ImageSourcePropType}
       >
         <StyledTitlesContainer>
-          <StyledText>Model S</StyledText>
-          <StyledSubText>Starting at $46,040</StyledSubText>
+          <StyledText>{name}</StyledText>
+          <StyledSubText>{tagline}</StyledSubText>
         </StyledTitlesContainer>
         <StyledButtonContainer>
           <StyledButton>
